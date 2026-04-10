@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Blast Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="score-board">Score: <span id="score">0</span> | High Score: <span id="high-score">0</span> | Level: <span id="level">1</span></div>
+        <canvas id="main-canvas" width="320" height="320"></canvas>
+        <div id="preview-container">
+            <canvas id="preview1" width="80" height="80"></canvas>
+            <canvas id="preview2" width="80" height="80"></canvas>
+            <canvas id="preview3" width="80" height="80"></canvas>
+        </div>
+    </div>
+    <div id="game-over-popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Game Over</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button id="reset-btn">Play Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
